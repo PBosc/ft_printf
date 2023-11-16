@@ -14,6 +14,12 @@
 
 int	ft_putstr_fd(char *s, int fd)
 {
-	write(fd, s, ft_strlen(s));
+	if (!s)
+	{
+		write(fd, "(null)", 6);
+		return (6);
+	}
+	else
+		write(fd, s, ft_strlen(s));
 	return (ft_strlen(s));
 }

@@ -47,7 +47,8 @@ FILES 		= 	ft_atoi				\
 				ft_lstlast			\
 				ft_lstmap			\
 				ft_lstnew			\
-				ft_lstsize		
+				ft_lstsize			\
+				ft_printf_utils
 
 SRCS = $(addsuffix .c, $(addprefix sources/, $(FILES)))
 

@@ -6,7 +6,7 @@
 /*   By: pibosc <pibosc@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 17:14:06 by pibosc            #+#    #+#             */
-/*   Updated: 2023/11/14 20:39:01 by pibosc           ###   ########.fr       */
+/*   Updated: 2023/11/16 03:30:37 by pibosc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,9 @@ typedef struct s_list
 	struct s_list	*next;
 }	t_list;
 
-int		handle_flag(const char *f, va_list params);
-int		ft_putnbrc_fd(int n, int fd, int size);
-int		ft_unbrc_fd(unsigned int n, int fd, int size);
-int		ft_puthex_fd(size_t address, int fd, int size);
-int		ft_puthexup_fd(size_t address, int fd, int size);
+# define HEX_BASE_LOW "0123456789abcdef"
+# define HEX_BASE_UP "0123456789ABCDEF"
+
 int		ft_atoi(const char *nptr);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t nmemb, size_t size);
